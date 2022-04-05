@@ -22,7 +22,7 @@ HEADERS  += Sketcher.h
 RESOURCES += \
     occSketcher.qrc
 
-CASROOT = D:/OpenCASCADE-7.5.0/opencascade-7.5.0
+CASROOT = C:\OCC\build
     
 win32 {
     DEFINES +=  \
@@ -43,6 +43,11 @@ win32 {
     }
 
     win32-msvc2015 {
+        compiler=vc14
+    }
+    
+    
+    win32-msvc2017 {
         compiler=vc14
     }
 
